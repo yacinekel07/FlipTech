@@ -1,5 +1,5 @@
-#ifndef CARTES_H 
-#define CARTES_H
+// Fichier cartes.h
+// Contient uniquement les structures et les prototypes (Cours 01 et 08)
 
 typedef struct {
     int valeur;   
@@ -12,11 +12,7 @@ typedef struct {
     int a_brule; 
 } Joueur;
 
-// NOUVEAU : La fonction renvoie un pointeur (Carte*) alloué dynamiquement
 Carte* initialiser_paquet(int *taille);
-
 void melanger_paquet(Carte *paquet, int taille);
 Carte piocher_carte(Carte *paquet, int *taille);
-void afficher_carte(Carte c); 
-
-#endif
+void afficher_carte(Carte c);
