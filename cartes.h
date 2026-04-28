@@ -13,4 +13,4 @@ typedef struct {
 Carte* initialiser_paquet(int *taille);
 void melanger_paquet(Carte *paquet, int taille);
 Carte piocher_carte(Carte *paquet, int *taille);
-void afficher_carte(Carte c);
+void afficher_carte(Carte c); 

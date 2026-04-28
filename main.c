@@ -13,7 +13,7 @@ int main() {
     // On reçoit le pointeur créé par le malloc dans la cuisine
     Carte *le_paquet = initialiser_paquet(&taille_du_paquet); 
     
-    melanger_paquet(le_paquet, taille_du_paquet);
+    melanger_paquet(le_paquet, taille_du_paquet);   
     printf("(Le croupier a melange un paquet de %d cartes)\n\n", taille_du_paquet);
 
     int mode_jeu = 0;
@@ -45,7 +45,7 @@ int main() {
         }
         for (p = 0; p < nb_joueurs; p++) {
             printf("Prenom du joueur %d : ", p + 1);
-            scanf("%s", liste_joueurs[p].nom); 
+            scanf("%s", liste_joueurs[p].nom);         
             liste_joueurs[p].score = 0;        
         }
     }
